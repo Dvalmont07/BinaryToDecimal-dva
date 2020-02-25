@@ -14,7 +14,8 @@ namespace BinaryToDecimal_Console
 
             try
             {
-                string binarySequence = "101";
+                Console.WriteLine("Type a binary sequence");
+                string binarySequence = Console.ReadLine();
                 Convertion convertion = new Convertion();
                 Console.WriteLine($" The decimal value of {binarySequence} is {convertion.ConvertBinaryToDecimal(binarySequence)}");
                 Console.ReadKey();

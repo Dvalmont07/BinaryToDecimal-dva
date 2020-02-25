@@ -5,8 +5,4 @@
     <RootNamespace>BinaryToDecimal_Application</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Entities\Entities.csproj" />
-  </ItemGroup>
-
 </Project>
