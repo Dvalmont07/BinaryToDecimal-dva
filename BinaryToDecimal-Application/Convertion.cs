@@ -11,8 +11,8 @@ namespace BinaryToDecimal_Application
         public decimal ConvertBinaryToDecimal(string binarySequence)
         {
             try
-            {               
-                char[] arr = binarySequence.ToCharArray();              
+            {
+                char[] arr = binarySequence.ToCharArray();
 
                 for (int i = 0; i < arr.Length; i++)
                 {
