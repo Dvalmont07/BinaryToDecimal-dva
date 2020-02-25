@@ -5,15 +5,11 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{273BA5DC-29E8-4ECA-881C-F3B19353399F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryToDecimal-Console", "BinaryToDecimal-Console\BinaryToDecimal-Console.csproj", "{39C75AF6-92FA-48B6-B3F9-B41C6C9823AD}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C38A696A-1F43-42C3-8EBA-C6B1A1C005FF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{FC9C603E-4747-4460-A0BC-FC9A4D58BEF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryToDecimal-Console", "BinaryToDecimal-Console\BinaryToDecimal-Console.csproj", "{39C75AF6-92FA-48B6-B3F9-B41C6C9823AD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{91E01C70-6893-4818-B586-2C88B7E4A0C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryToDecimal-Application", "BinaryToDecimal-Application\BinaryToDecimal-Application.csproj", "{81B3D281-3558-41D5-BCB4-B879B8C6EF05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryToDecimal-Application", "BinaryToDecimal-Application\BinaryToDecimal-Application.csproj", "{81B3D281-3558-41D5-BCB4-B879B8C6EF05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +21,6 @@ Global
 		{39C75AF6-92FA-48B6-B3F9-B41C6C9823AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39C75AF6-92FA-48B6-B3F9-B41C6C9823AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39C75AF6-92FA-48B6-B3F9-B41C6C9823AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FC9C603E-4747-4460-A0BC-FC9A4D58BEF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC9C603E-4747-4460-A0BC-FC9A4D58BEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC9C603E-4747-4460-A0BC-FC9A4D58BEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC9C603E-4747-4460-A0BC-FC9A4D58BEF0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{81B3D281-3558-41D5-BCB4-B879B8C6EF05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{81B3D281-3558-41D5-BCB4-B879B8C6EF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81B3D281-3558-41D5-BCB4-B879B8C6EF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,7 +31,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{39C75AF6-92FA-48B6-B3F9-B41C6C9823AD} = {273BA5DC-29E8-4ECA-881C-F3B19353399F}
-		{FC9C603E-4747-4460-A0BC-FC9A4D58BEF0} = {C38A696A-1F43-42C3-8EBA-C6B1A1C005FF}
 		{81B3D281-3558-41D5-BCB4-B879B8C6EF05} = {91E01C70-6893-4818-B586-2C88B7E4A0C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

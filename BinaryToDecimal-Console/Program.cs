@@ -21,7 +21,6 @@ namespace BinaryToDecimal_Console
             }
             catch (Exception ex)
             {
-
                 Console.WriteLine(ex.Message);
             }
         }
