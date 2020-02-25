@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace BinaryToDecimal_Application.Tests
 {
@@ -22,6 +23,13 @@ namespace BinaryToDecimal_Application.Tests
         {
             string binaryString = "10110";
             Assert.AreNotEqual(convertion.ConvertBinaryToDecimal(binaryString), 21);
+        }
+        [TestMethod()]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void ConvertBinaryToDecimalTestNotBinarryNumberFail()
+        {
+            string binaryString = "10112";
+            decimal output = convertion.ConvertBinaryToDecimal(binaryString);
         }
     }
 }
