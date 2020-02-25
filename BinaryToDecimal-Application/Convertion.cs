@@ -14,6 +14,8 @@ namespace BinaryToDecimal_Application
             {
                 char[] arr = binarySequence.ToCharArray();
 
+                ValidateString(binarySequence);
+
                 for (int i = 0; i < arr.Length; i++)
                 {
                     if (!_allowedNumbers.Contains(arr[i]))
@@ -29,6 +31,15 @@ namespace BinaryToDecimal_Application
             {
                 throw;
             }
+        }
+
+        private static void ValidateString(string binarySequence)
+        {
+            if (binarySequence.Length > 8)
+                throw new ArgumentOutOfRangeException("Error: the length must not exceed eight digits");
+            if (string.IsNullOrEmpty(binarySequence))
+                throw new NullReferenceException("Error: Null argument, please type a string");
+
         }
     }
 }
