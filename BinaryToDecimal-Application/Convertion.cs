@@ -5,13 +5,28 @@ namespace BinaryToDecimal_Application
 {
     public class Convertion
     {
-        private int _previousNumber = 0;
+        private decimal _decimalNumber = 0;
         private const int _multiplier = 2;
         private readonly List<char> _allowedNumbers = new List<char> { '0', '1' };
+        public decimal ConvertBinaryToDecimalSimplefied(string binarySequence)
+        {
+            try
+            {
+                ValidateString(binarySequence);
+                _decimalNumber = (Convert.ToInt32(binarySequence, 2));
+
+                return _decimalNumber;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
         public decimal ConvertBinaryToDecimal(string binarySequence)
         {
             try
             {
+                //  _decimalNumber = (Convert.ToInt32(binarySequence, 2));
                 char[] arr = binarySequence.ToCharArray();
 
                 ValidateString(binarySequence);
@@ -20,19 +35,18 @@ namespace BinaryToDecimal_Application
                 {
                     if (!_allowedNumbers.Contains(arr[i]))
                     {
-                        throw new InvalidOperationException("Error. The string must contain only the numbers 0 or 1");
+                        throw new InvalidOperationException("Error: The string must contain only the numbers 0 or 1");
                     }
-                    _previousNumber = _previousNumber * _multiplier + Convert.ToInt32(arr[i].ToString());
+                    _decimalNumber = _decimalNumber * _multiplier + Convert.ToInt32(arr[i].ToString());
                 }
 
-                return _previousNumber;
+                return _decimalNumber;
             }
             catch (Exception)
             {
                 throw;
             }
         }
-
         private static void ValidateString(string binarySequence)
         {
             if (binarySequence.Length > 8)

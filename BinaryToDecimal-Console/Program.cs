@@ -15,9 +15,12 @@ namespace BinaryToDecimal_Console
             try
             {
                 Console.WriteLine("Type a binary sequence");
-                string binarySequence = Console.ReadLine();
                 Convertion convertion = new Convertion();
+                string binarySequence = Console.ReadLine();
+
                 Console.WriteLine($" The decimal value of {binarySequence} is {convertion.ConvertBinaryToDecimal(binarySequence)}");
+                Console.WriteLine($" The decimal value of using a simplified method is {convertion.ConvertBinaryToDecimalSimplefied(binarySequence)}");
+
                 Console.ReadKey();
             }
             catch (Exception ex)

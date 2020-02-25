@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using BinaryToDecimal_Application;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace BinaryToDecimal_Application.Tests
@@ -38,13 +39,19 @@ namespace BinaryToDecimal_Application.Tests
             string binaryString = "101100001";
             decimal output = convertion.ConvertBinaryToDecimal(binaryString);
         }
-
         [TestMethod()]
         [ExpectedException(typeof(NullReferenceException))]
         public void ConvertBinaryToDecimalTestNullArg()
         {
             string binaryString = null;
             decimal output = convertion.ConvertBinaryToDecimal(binaryString);
+        }
+
+        [TestMethod()]
+        public void ConvertBinaryToDecimalSimplefiedTest()
+        {
+            string binaryString = "1010";
+            Assert.AreEqual(convertion.ConvertBinaryToDecimalSimplefied(binaryString), 10);
         }
     }
 }
