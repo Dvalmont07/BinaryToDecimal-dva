@@ -1,5 +1,5 @@
 # BinaryToDecimal-dva
-A simple app the returns the decimal form of a binary number
+A simple app that returns a decimal form of a binary number
 
 # Binary to Decimal Converter
 
